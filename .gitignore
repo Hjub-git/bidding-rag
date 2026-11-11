@@ -1,0 +1,52 @@
+# ─────────────────────────────────────────────────────────────
+#  Bidding RAG · 招投标智能问答 —— Git 忽略清单
+#  原则：**源码 + 文档 + 测试数据入库；依赖、构建产物、运行产物、密钥一律不入库**
+# ─────────────────────────────────────────────────────────────
+
+# ── 依赖 / 构建产物 ──────────────────────────────────────────
+node_modules/
+dist/
+target/
+*.class
+*.jar
+*.war
+
+# ── Python ──────────────────────────────────────────────────
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# ── 密钥 / 运行产物（**绝不入库**）─────────────────────────────
+# .env 里是真 API Key；模板见根目录 .env.example 与 rag-service/.env.example
+.env
+.env.*
+!.env.example
+_run/
+*.log
+*.pid
+jwt-secret.txt
+rag-token.txt
+
+# ── 运行时数据目录 ──────────────────────────────────────────
+vector_data*/
+data/
+_archive/
+
+# ── 评测中间产物（脚本入库，结果不入库）──────────────────────
+eval/*.json
+eval/vector_*/
+eval/runs/
+# 例外：这两个是「输入」而不是「输出」，闸门必需，必须入库
+!eval/baseline_seed80.json
+!eval/_rewrite_strict.json
+
+# ── IDE / 编辑器 / 系统 ─────────────────────────────────────
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+*.swp

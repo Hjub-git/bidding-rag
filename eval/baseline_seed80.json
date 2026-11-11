@@ -1,0 +1,1089 @@
+{
+ "dataset": "henan_tender.pdf",
+ "golden_version": "v1-2026-11-02",
+ "judge": "matcher.py (phrase_in + lcs_ratio)",
+ "generated_at": "2026-11-02 10:31:22",
+ "chunker": {
+  "size": 800,
+  "overlap": 200,
+  "top_k": 10
+ },
+ "init_ms": 5752,
+ "ingest_ms": null,
+ "chunk_total": 74,
+ "n_answerable": 70,
+ "n_refuse": 10,
+ "metrics": {
+  "hit@5": 72.9,
+  "hit@10": 82.9,
+  "all@10": 82.9,
+  "ecr@10_mean": 0.8642,
+  "latency_p50_ms": 20.8,
+  "latency_p95_ms": 25.3,
+  "leak_count": null,
+  "table_hit": null
+ },
+ "notes": {
+  "leak_count": "未测：单文档库无第二项目，leak_count 恒为 0（无意义）",
+  "table_hit": "未测：chunk metadata 无 type 字段"
+ },
+ "by_category": {
+  "多跳": {
+   "n": 6,
+   "hit5": 100.0,
+   "hit10": 100.0
+  },
+  "废标": {
+   "n": 13,
+   "hit5": 61.5,
+   "hit10": 76.9
+  },
+  "数值": {
+   "n": 14,
+   "hit5": 64.3,
+   "hit10": 85.7
+  },
+  "评标办法": {
+   "n": 18,
+   "hit5": 77.8,
+   "hit10": 88.9
+  },
+  "资格要求": {
+   "n": 19,
+   "hit5": 73.7,
+   "hit10": 73.7
+  }
+ },
+ "refusal": {
+  "n": 10,
+  "detectable": false,
+  "reason": "现状无 score、无拒答分支：retrieve 恒返回 chunk"
+ },
+ "capability_gaps": {
+  "metadata_keys": [
+   "chunk_index",
+   "chunker_version",
+   "doc_id",
+   "index_version",
+   "page_end",
+   "page_start",
+   "section_no",
+   "source",
+   "tender_id",
+   "type"
+  ],
+  "has_tender_id": true,
+  "has_page": true,
+  "has_section": true,
+  "has_type": true,
+  "chunk_size_config": [
+   800,
+   200
+  ],
+  "embedding": "BAAI/bge-small-zh-v1.5"
+ },
+ "per_item": [
+  {
+   "id": "Q01",
+   "category": "资格要求",
+   "kind": "answer",
+   "ranks": [
+    null
+   ],
+   "hit5": false,
+   "hit10": false,
+   "all10": false,
+   "ecr": 0.1364,
+   "latency_ms": 38.8
+  },
+  {
+   "id": "Q02",
+   "category": "资格要求",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 17.6
+  },
+  {
+   "id": "Q03",
+   "category": "资格要求",
+   "kind": "answer",
+   "ranks": [
+    2
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 16.7
+  },
+  {
+   "id": "Q04",
+   "category": "资格要求",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 15.6
+  },
+  {
+   "id": "Q05",
+   "category": "资格要求",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 18.1
+  },
+  {
+   "id": "Q06",
+   "category": "资格要求",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 16.3
+  },
+  {
+   "id": "Q07",
+   "category": "资格要求",
+   "kind": "answer",
+   "ranks": [
+    2
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 20.8
+  },
+  {
+   "id": "Q08",
+   "category": "资格要求",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 22.3
+  },
+  {
+   "id": "Q09",
+   "category": "评标办法",
+   "kind": "answer",
+   "ranks": [
+    4
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 18.6
+  },
+  {
+   "id": "Q10",
+   "category": "评标办法",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 19.7
+  },
+  {
+   "id": "Q11",
+   "category": "评标办法",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 20.0
+  },
+  {
+   "id": "Q12",
+   "category": "评标办法",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 23.6
+  },
+  {
+   "id": "Q13",
+   "category": "评标办法",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 20.0
+  },
+  {
+   "id": "Q14",
+   "category": "评标办法",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 20.4
+  },
+  {
+   "id": "Q15",
+   "category": "评标办法",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 15.9
+  },
+  {
+   "id": "Q16",
+   "category": "评标办法",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 17.4
+  },
+  {
+   "id": "Q17",
+   "category": "数值",
+   "kind": "answer",
+   "ranks": [
+    2
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 17.3
+  },
+  {
+   "id": "Q18",
+   "category": "数值",
+   "kind": "answer",
+   "ranks": [
+    5
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 21.2
+  },
+  {
+   "id": "Q19",
+   "category": "数值",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 22.9
+  },
+  {
+   "id": "Q20",
+   "category": "数值",
+   "kind": "answer",
+   "ranks": [
+    2
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 20.9
+  },
+  {
+   "id": "Q21",
+   "category": "数值",
+   "kind": "answer",
+   "ranks": [
+    4
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 18.8
+  },
+  {
+   "id": "Q22",
+   "category": "数值",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 17.0
+  },
+  {
+   "id": "Q23",
+   "category": "数值",
+   "kind": "answer",
+   "ranks": [
+    null
+   ],
+   "hit5": false,
+   "hit10": false,
+   "all10": false,
+   "ecr": 0.1905,
+   "latency_ms": 19.8
+  },
+  {
+   "id": "Q24",
+   "category": "数值",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 20.0
+  },
+  {
+   "id": "Q25",
+   "category": "废标",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 23.6
+  },
+  {
+   "id": "Q26",
+   "category": "废标",
+   "kind": "answer",
+   "ranks": [
+    2
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 22.8
+  },
+  {
+   "id": "Q27",
+   "category": "废标",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 26.7
+  },
+  {
+   "id": "Q28",
+   "category": "废标",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 23.9
+  },
+  {
+   "id": "Q29",
+   "category": "废标",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 20.1
+  },
+  {
+   "id": "Q30",
+   "category": "废标",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 21.8
+  },
+  {
+   "id": "Q31",
+   "category": "多跳",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 23.3
+  },
+  {
+   "id": "Q32",
+   "category": "多跳",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 17.6
+  },
+  {
+   "id": "Q33",
+   "category": "多跳",
+   "kind": "answer",
+   "ranks": [
+    5
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 17.1
+  },
+  {
+   "id": "Q34",
+   "category": "多跳",
+   "kind": "answer",
+   "ranks": [
+    1,
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 20.1
+  },
+  {
+   "id": "Q35",
+   "category": "无法回答",
+   "kind": "refuse",
+   "hit5": null,
+   "hit10": null,
+   "ecr": null,
+   "latency_ms": 17.1
+  },
+  {
+   "id": "Q36",
+   "category": "无法回答",
+   "kind": "refuse",
+   "hit5": null,
+   "hit10": null,
+   "ecr": null,
+   "latency_ms": 16.3
+  },
+  {
+   "id": "Q37",
+   "category": "无法回答",
+   "kind": "refuse",
+   "hit5": null,
+   "hit10": null,
+   "ecr": null,
+   "latency_ms": 20.2
+  },
+  {
+   "id": "Q38",
+   "category": "无法回答",
+   "kind": "refuse",
+   "hit5": null,
+   "hit10": null,
+   "ecr": null,
+   "latency_ms": 18.0
+  },
+  {
+   "id": "Q39",
+   "category": "无法回答",
+   "kind": "refuse",
+   "hit5": null,
+   "hit10": null,
+   "ecr": null,
+   "latency_ms": 18.7
+  },
+  {
+   "id": "Q40",
+   "category": "多跳",
+   "kind": "answer",
+   "ranks": [
+    3
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 18.0
+  },
+  {
+   "id": "Q41",
+   "category": "资格要求",
+   "kind": "answer",
+   "ranks": [
+    null
+   ],
+   "hit5": false,
+   "hit10": false,
+   "all10": false,
+   "ecr": 0.1053,
+   "latency_ms": 22.3
+  },
+  {
+   "id": "Q42",
+   "category": "资格要求",
+   "kind": "answer",
+   "ranks": [
+    null
+   ],
+   "hit5": false,
+   "hit10": false,
+   "all10": false,
+   "ecr": 0.1053,
+   "latency_ms": 22.9
+  },
+  {
+   "id": "Q43",
+   "category": "资格要求",
+   "kind": "answer",
+   "ranks": [
+    null
+   ],
+   "hit5": false,
+   "hit10": false,
+   "all10": false,
+   "ecr": 0.1053,
+   "latency_ms": 20.0
+  },
+  {
+   "id": "Q44",
+   "category": "资格要求",
+   "kind": "answer",
+   "ranks": [
+    5
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 18.3
+  },
+  {
+   "id": "Q45",
+   "category": "资格要求",
+   "kind": "answer",
+   "ranks": [
+    4
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 21.3
+  },
+  {
+   "id": "Q46",
+   "category": "资格要求",
+   "kind": "answer",
+   "ranks": [
+    3
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 24.6
+  },
+  {
+   "id": "Q47",
+   "category": "资格要求",
+   "kind": "answer",
+   "ranks": [
+    2
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 22.4
+  },
+  {
+   "id": "Q48",
+   "category": "资格要求",
+   "kind": "answer",
+   "ranks": [
+    null
+   ],
+   "hit5": false,
+   "hit10": false,
+   "all10": false,
+   "ecr": 0.3,
+   "latency_ms": 21.9
+  },
+  {
+   "id": "Q49",
+   "category": "资格要求",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 25.3
+  },
+  {
+   "id": "Q50",
+   "category": "资格要求",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 23.5
+  },
+  {
+   "id": "Q51",
+   "category": "资格要求",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 22.8
+  },
+  {
+   "id": "Q52",
+   "category": "数值",
+   "kind": "answer",
+   "ranks": [
+    9
+   ],
+   "hit5": false,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 22.6
+  },
+  {
+   "id": "Q53",
+   "category": "数值",
+   "kind": "answer",
+   "ranks": [
+    8
+   ],
+   "hit5": false,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 18.6
+  },
+  {
+   "id": "Q54",
+   "category": "数值",
+   "kind": "answer",
+   "ranks": [
+    null
+   ],
+   "hit5": false,
+   "hit10": false,
+   "all10": false,
+   "ecr": 0.2222,
+   "latency_ms": 24.1
+  },
+  {
+   "id": "Q55",
+   "category": "数值",
+   "kind": "answer",
+   "ranks": [
+    6
+   ],
+   "hit5": false,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 21.0
+  },
+  {
+   "id": "Q56",
+   "category": "数值",
+   "kind": "answer",
+   "ranks": [
+    2
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 24.8
+  },
+  {
+   "id": "Q57",
+   "category": "数值",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 21.5
+  },
+  {
+   "id": "Q58",
+   "category": "评标办法",
+   "kind": "answer",
+   "ranks": [
+    null
+   ],
+   "hit5": false,
+   "hit10": false,
+   "all10": false,
+   "ecr": 0.2632,
+   "latency_ms": 22.5
+  },
+  {
+   "id": "Q59",
+   "category": "评标办法",
+   "kind": "answer",
+   "ranks": [
+    null
+   ],
+   "hit5": false,
+   "hit10": false,
+   "all10": false,
+   "ecr": 0.2941,
+   "latency_ms": 23.1
+  },
+  {
+   "id": "Q60",
+   "category": "评标办法",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 22.3
+  },
+  {
+   "id": "Q61",
+   "category": "评标办法",
+   "kind": "answer",
+   "ranks": [
+    8
+   ],
+   "hit5": false,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 20.6
+  },
+  {
+   "id": "Q62",
+   "category": "评标办法",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 25.5
+  },
+  {
+   "id": "Q63",
+   "category": "评标办法",
+   "kind": "answer",
+   "ranks": [
+    10
+   ],
+   "hit5": false,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 24.8
+  },
+  {
+   "id": "Q64",
+   "category": "评标办法",
+   "kind": "answer",
+   "ranks": [
+    4
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 24.6
+  },
+  {
+   "id": "Q65",
+   "category": "评标办法",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 16.8
+  },
+  {
+   "id": "Q66",
+   "category": "评标办法",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 16.2
+  },
+  {
+   "id": "Q67",
+   "category": "评标办法",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 18.6
+  },
+  {
+   "id": "Q68",
+   "category": "废标",
+   "kind": "answer",
+   "ranks": [
+    null
+   ],
+   "hit5": false,
+   "hit10": false,
+   "all10": false,
+   "ecr": 0.2,
+   "latency_ms": 23.0
+  },
+  {
+   "id": "Q69",
+   "category": "废标",
+   "kind": "answer",
+   "ranks": [
+    7
+   ],
+   "hit5": false,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 19.3
+  },
+  {
+   "id": "Q70",
+   "category": "废标",
+   "kind": "answer",
+   "ranks": [
+    6
+   ],
+   "hit5": false,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 18.5
+  },
+  {
+   "id": "Q71",
+   "category": "废标",
+   "kind": "answer",
+   "ranks": [
+    null
+   ],
+   "hit5": false,
+   "hit10": false,
+   "all10": false,
+   "ecr": 0.1034,
+   "latency_ms": 20.5
+  },
+  {
+   "id": "Q72",
+   "category": "废标",
+   "kind": "answer",
+   "ranks": [
+    5
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 22.6
+  },
+  {
+   "id": "Q73",
+   "category": "废标",
+   "kind": "answer",
+   "ranks": [
+    null
+   ],
+   "hit5": false,
+   "hit10": false,
+   "all10": false,
+   "ecr": 0.4667,
+   "latency_ms": 18.6
+  },
+  {
+   "id": "Q74",
+   "category": "废标",
+   "kind": "answer",
+   "ranks": [
+    1
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 22.0
+  },
+  {
+   "id": "Q75",
+   "category": "多跳",
+   "kind": "answer",
+   "ranks": [
+    2,
+    3
+   ],
+   "hit5": true,
+   "hit10": true,
+   "all10": true,
+   "ecr": 1.0,
+   "latency_ms": 24.6
+  },
+  {
+   "id": "Q76",
+   "category": "无法回答",
+   "kind": "refuse",
+   "hit5": null,
+   "hit10": null,
+   "ecr": null,
+   "latency_ms": 24.0
+  },
+  {
+   "id": "Q77",
+   "category": "无法回答",
+   "kind": "refuse",
+   "hit5": null,
+   "hit10": null,
+   "ecr": null,
+   "latency_ms": 21.6
+  },
+  {
+   "id": "Q78",
+   "category": "无法回答",
+   "kind": "refuse",
+   "hit5": null,
+   "hit10": null,
+   "ecr": null,
+   "latency_ms": 21.2
+  },
+  {
+   "id": "Q79",
+   "category": "无法回答",
+   "kind": "refuse",
+   "hit5": null,
+   "hit10": null,
+   "ecr": null,
+   "latency_ms": 20.5
+  },
+  {
+   "id": "Q80",
+   "category": "无法回答",
+   "kind": "refuse",
+   "hit5": null,
+   "hit10": null,
+   "ecr": null,
+   "latency_ms": 22.4
+  }
+ ]
+}

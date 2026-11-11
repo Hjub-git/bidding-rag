@@ -1,0 +1,323 @@
+/* =====================================================================
+   全局设计系统 —— 机电设备在线招投标系统
+   统一配色 / 圆角 / 阴影 / 排版，覆盖 Element UI 默认样式
+   ===================================================================== */
+
+:root {
+  --brand-1: #1d4ed8;   /* 深蓝 */
+  --brand-2: #0ea5e9;   /* 天蓝 */
+  --brand-gradient: linear-gradient(135deg, #1d4ed8 0%, #0ea5e9 100%);
+  --bg: #f3f6fb;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --line: #e5eaf2;
+  --radius: 14px;
+  --shadow-sm: 0 2px 8px rgba(30, 41, 59, 0.06);
+  --shadow: 0 6px 24px rgba(30, 41, 59, 0.10);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+#app {
+  font-family: 'PingFang SC', 'Microsoft YaHei', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* ---------- 卡片 ---------- */
+.el-card {
+  border: 1px solid var(--line) !important;
+  border-radius: var(--radius) !important;
+  box-shadow: var(--shadow-sm) !important;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.el-card:hover {
+  box-shadow: var(--shadow) !important;
+}
+
+.el-card__header {
+  border-bottom: 1px solid var(--line) !important;
+  font-weight: 600;
+}
+
+/* ---------- 按钮 ---------- */
+.el-button--primary {
+  background: var(--brand-gradient) !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(29, 78, 216, 0.25);
+  transition: opacity 0.2s ease, box-shadow 0.2s ease;
+}
+
+.el-button--primary:hover,
+.el-button--primary:focus {
+  opacity: 0.92;
+  box-shadow: 0 6px 16px rgba(29, 78, 216, 0.32);
+}
+
+/* ---------- 表格 ---------- */
+.el-table th.el-table__cell {
+  background-color: #f8fafc !important;
+  color: #475569;
+  font-weight: 600;
+}
+
+.el-table .el-table__row:hover > td.el-table__cell {
+  background-color: #f1f7ff !important;
+}
+
+/* ---------- 分页 ---------- */
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  background: var(--brand-1) !important;
+}
+
+/* =====================================================================
+   首页
+   ===================================================================== */
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-container .el-header {
+  height: 64px !important;
+  line-height: 64px;
+  background: var(--brand-gradient);
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(29, 78, 216, 0.28);
+}
+
+.home-container .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1240px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.home-container .logo {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.home-container .nav-links .el-button {
+  color: #fff;
+  margin-left: 6px;
+}
+
+.home-container .nav-links .el-button:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.home-container .el-main {
+  background-color: var(--bg);
+  padding: 24px;
+  flex: 1;
+}
+
+.home-container .welcome-card,
+.home-container .info-card {
+  margin-bottom: 20px;
+}
+
+/* 首页 hero 区 */
+.hero {
+  background: var(--brand-gradient);
+  color: #fff;
+  border-radius: var(--radius);
+  padding: 36px 32px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  right: -60px;
+  top: -60px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.10);
+}
+
+.hero h1 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.hero p {
+  margin: 0;
+  opacity: 0.92;
+  font-size: 15px;
+  max-width: 640px;
+  line-height: 1.7;
+}
+
+.home-container .guide-links p {
+  margin: 12px 0;
+}
+
+.home-container .guide-desc {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 4px;
+  display: block;
+  line-height: 1.6;
+}
+
+.home-container .el-footer {
+  background: #111827;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+}
+
+.home-container .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 状态徽标 */
+.status-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  line-height: 20px;
+}
+.status-open, .status-active, .status-accepted {
+  background: #e7f8ee;
+  color: #16a34a;
+}
+.status-closed, .status-rejected, .status-cancelled {
+  background: #fdeaea;
+  color: #dc2626;
+}
+.status-submitted, .status-pending {
+  background: #fff7e6;
+  color: #d97706;
+}
+
+/* =====================================================================
+   控制台 / 登录 / 注册 通用
+   ===================================================================== */
+.dashboard-header {
+  height: 60px !important;
+  line-height: 60px;
+  color: #fff;
+  box-shadow: 0 2px 10px rgba(30, 41, 59, 0.18);
+}
+
+.dashboard-header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.dashboard-header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.dashboard-header .el-button {
+  color: #fff;
+}
+
+.dashboard {
+  min-height: 100vh;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px;
+}
+
+.stat-card {
+  background: #f8fafc;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+}
+
+.stat-card .label {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.stat-card .value {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--brand-1);
+  margin-top: 6px;
+}
+
+/* 登录 / 注册 背景 */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(14, 165, 233, 0.35), transparent),
+    radial-gradient(1000px 500px at 100% 110%, rgba(29, 78, 216, 0.30), transparent),
+    #0b1020;
+  padding: 20px;
+}
+
+.auth-card {
+  width: 460px;
+  border-radius: 16px !important;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35) !important;
+}
+
+.auth-card .auth-brand {
+  background: var(--brand-gradient);
+  color: #fff;
+  padding: 28px 24px;
+  text-align: center;
+}
+
+.auth-card .auth-brand h2 {
+  margin: 0 0 6px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.auth-card .auth-brand p {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 13px;
+}
+
+.auth-card .el-card__body {
+  padding: 28px 32px 32px;
+}

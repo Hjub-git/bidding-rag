@@ -1,0 +1,1005 @@
+{
+ "dataset": "seed_80",
+ "version": "v1-2026-11-02",
+ "note": "40 题扩到 80；口语题 30 条；每条非拒答题带 evidence.quote + page；quote 经「归一化空白后逐字存在于对应页」校验。",
+ "items": [
+  {
+   "id": "Q01",
+   "category": "资格要求",
+   "question": "投标人需要具备什么资质证书？",
+   "evidence": [
+    {
+     "page": 4,
+     "quote": "供应商应具有医疗器械经营许可证或相关备案凭证"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q02",
+   "category": "资格要求",
+   "question": "生产厂家来投标还需要额外的许可证吗？",
+   "evidence": [
+    {
+     "page": 4,
+     "quote": "当供应商为生产厂家时，还需具有医疗器械生产许可证"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q03",
+   "category": "资格要求",
+   "question": "本项目允许联合体投标吗？",
+   "evidence": [
+    {
+     "page": 6,
+     "quote": "联合体投标不允许"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q04",
+   "category": "资格要求",
+   "question": "本项目接受进口产品吗？",
+   "evidence": [
+    {
+     "page": 3,
+     "quote": "是否接受进口产品：是"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q05",
+   "category": "资格要求",
+   "question": "被列入失信被执行人的供应商还能参加吗？",
+   "evidence": [
+    {
+     "page": 4,
+     "quote": "将拒绝其参加政府采购活动"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q06",
+   "category": "资格要求",
+   "question": "信用记录查询的时间范围是怎么规定的？",
+   "evidence": [
+    {
+     "page": 4,
+     "quote": "查询日期为公告发布之日起至投标截止之日止"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q07",
+   "category": "资格要求",
+   "question": "本项目是否只面向中小企业采购？",
+   "evidence": [
+    {
+     "page": 3,
+     "quote": "本项目是否为只面向中小企业采购：否"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q08",
+   "category": "资格要求",
+   "question": "供应商需要满足政府采购法第几条规定的资格条件？",
+   "evidence": [
+    {
+     "page": 3,
+     "quote": "满足《中华人民共和国政府采购法》第二十二条规定"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q09",
+   "category": "评标办法",
+   "question": "评标满分是多少分？",
+   "evidence": [
+    {
+     "page": 18,
+     "quote": "评分标准（满分为100 分）"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q10",
+   "category": "评标办法",
+   "question": "投标报价这一项占多少分？",
+   "evidence": [
+    {
+     "page": 19,
+     "quote": "投标报价评分标准30 分"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q11",
+   "category": "评标办法",
+   "question": "投标报价得分怎么计算？",
+   "evidence": [
+    {
+     "page": 19,
+     "quote": "投标报价得分=(评标基准价／投标报价)×30"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q12",
+   "category": "评标办法",
+   "question": "技术部分占多少分？",
+   "evidence": [
+    {
+     "page": 19,
+     "quote": "技术部分(35 分）"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q13",
+   "category": "评标办法",
+   "question": "商务部分占多少分？",
+   "evidence": [
+    {
+     "page": 20,
+     "quote": "商务部分（35 分）"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q14",
+   "category": "评标办法",
+   "question": "技术参数有一项不满足会怎么扣分？",
+   "evidence": [
+    {
+     "page": 19,
+     "quote": "1项不满足扣1分,30分扣完为止"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q15",
+   "category": "评标办法",
+   "question": "小微企业报价有什么优惠？",
+   "evidence": [
+    {
+     "page": 19,
+     "quote": "对小微企业报价给予20%扣除"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q16",
+   "category": "评标办法",
+   "question": "评分分值保留几位小数？",
+   "evidence": [
+    {
+     "page": 18,
+     "quote": "评分分值计算保留小数点后两位"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q17",
+   "category": "数值",
+   "question": "投标保证金要交多少钱？",
+   "evidence": [
+    {
+     "page": 6,
+     "quote": "不需要缴纳投标保证金"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q18",
+   "category": "数值",
+   "question": "投标文件提交的截止时间是几点？",
+   "evidence": [
+    {
+     "page": 4,
+     "quote": "2024 年7 月9 日10 点 00 分"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q19",
+   "category": "数值",
+   "question": "项目预算金额是多少？",
+   "evidence": [
+    {
+     "page": 3,
+     "quote": "预算金额：630 万元"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q20",
+   "category": "数值",
+   "question": "合同履行期限是多久？",
+   "evidence": [
+    {
+     "page": 3,
+     "quote": "合同履行期限：60 天"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q21",
+   "category": "数值",
+   "question": "投标有效期是多久？",
+   "evidence": [
+    {
+     "page": 6,
+     "quote": "开标后60 天"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q22",
+   "category": "数值",
+   "question": "免费质保期多长？",
+   "evidence": [
+    {
+     "page": 6,
+     "quote": "免费质保期12 个月"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q23",
+   "category": "数值",
+   "question": "获取招标文件的时间是什么时候？",
+   "evidence": [
+    {
+     "page": 4,
+     "quote": "2024 年6 月18 日至 2024 年 6 月25 日"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q24",
+   "category": "数值",
+   "question": "公告期限是几个工作日？",
+   "evidence": [
+    {
+     "page": 4,
+     "quote": "自本公告发布之日起5 个工作日"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q25",
+   "category": "废标",
+   "question": "哪些情形应当予以废标？",
+   "evidence": [
+    {
+     "page": 21,
+     "quote": "出现影响采购公正的违法、违规行为的"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q26",
+   "category": "废标",
+   "question": "投标报价超过采购预算会怎么处理？",
+   "evidence": [
+    {
+     "page": 21,
+     "quote": "投标人的报价超过了采购预算，采购人不能支付的"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q27",
+   "category": "废标",
+   "question": "不同供应商上传文件的电脑硬件信息相同会怎么处理？",
+   "evidence": [
+    {
+     "page": 22,
+     "quote": "不同供应商的电子投标（响应）文件上传计算机的网卡 MAC 地址"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q28",
+   "category": "废标",
+   "question": "投标文件没有按规定签章会怎样？",
+   "evidence": [
+    {
+     "page": 21,
+     "quote": "未按照招标文件规定要求签署、签章的"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q29",
+   "category": "废标",
+   "question": "对同一货物提供选择性报价会怎样？",
+   "evidence": [
+    {
+     "page": 22,
+     "quote": "投标文件中对同一货物或标段提供选择性报价的"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q30",
+   "category": "废标",
+   "question": "不同供应商用同一台设备编制投标文件算什么问题？",
+   "evidence": [
+    {
+     "page": 22,
+     "quote": "不同供应商的投标（响应）文件由同一电子设备编制"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q31",
+   "category": "多跳",
+   "question": "如果两家投标人综合得分相同，谁中标？",
+   "evidence": [
+    {
+     "page": 21,
+     "quote": "如果综合得分中出现两家或两家以上相同者，投标报价较低者优先中标"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q32",
+   "category": "多跳",
+   "question": "投标人投同一品牌的核心产品怎么评审？",
+   "evidence": [
+    {
+     "page": 20,
+     "quote": "不同投标人所投核心产品对应品牌完全相同"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q33",
+   "category": "多跳",
+   "question": "本项目的付款方式是什么？",
+   "evidence": [
+    {
+     "page": 6,
+     "quote": "项目验收合格、资金到账后付款"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q34",
+   "category": "多跳",
+   "question": "供货期限和免费质保期分别是多久？",
+   "evidence": [
+    {
+     "page": 6,
+     "quote": "供货期限60 天"
+    },
+    {
+     "page": 6,
+     "quote": "免费质保期12 个月"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q35",
+   "category": "无法回答",
+   "question": "竞争对手的报价是多少？",
+   "evidence": [],
+   "must_refuse": true,
+   "colloquial": false
+  },
+  {
+   "id": "Q36",
+   "category": "无法回答",
+   "question": "上一次这个项目的中标单位是哪家公司？",
+   "evidence": [],
+   "must_refuse": true,
+   "colloquial": false
+  },
+  {
+   "id": "Q37",
+   "category": "无法回答",
+   "question": "这款医学装备目前的市场价是多少？",
+   "evidence": [],
+   "must_refuse": true,
+   "colloquial": false
+  },
+  {
+   "id": "Q38",
+   "category": "无法回答",
+   "question": "本次评标委员会的专家名单是谁？",
+   "evidence": [],
+   "must_refuse": true,
+   "colloquial": false
+  },
+  {
+   "id": "Q39",
+   "category": "无法回答",
+   "question": "中标结果什么时候公示，在哪里查？",
+   "evidence": [],
+   "must_refuse": true,
+   "colloquial": false
+  },
+  {
+   "id": "Q40",
+   "category": "多跳",
+   "question": "采购单位的项目联系人电话是多少？",
+   "evidence": [
+    {
+     "page": 5,
+     "quote": "联系方式：13592283936"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q41",
+   "category": "资格要求",
+   "question": "公司账目乱、名声差，是不是就没法参与了？",
+   "evidence": [
+    {
+     "page": 3,
+     "quote": "具有良好的商业信誉和健全的财务会计制度"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q42",
+   "category": "资格要求",
+   "question": "干活用的机器设备和懂行的技术人，有没有硬性门槛？",
+   "evidence": [
+    {
+     "page": 3,
+     "quote": "具有履行合同所必需的设备和专业技术能力"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q43",
+   "category": "资格要求",
+   "question": "平时交税、给员工上社保这些记录，也要看吗？",
+   "evidence": [
+    {
+     "page": 3,
+     "quote": "有依法缴纳税收和社会保障资金的良好记录"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q44",
+   "category": "资格要求",
+   "question": "公司前几年要是有过被处罚的记录，还能来吗？",
+   "evidence": [
+    {
+     "page": 3,
+     "quote": "参加政府采购活动前三年内，在经营活动中没有重大违法记录"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q45",
+   "category": "资格要求",
+   "question": "想证明自己这几年没出过事，得交一份什么东西？",
+   "evidence": [
+    {
+     "page": 4,
+     "quote": "没有重大违法记录的书面声明函，格式自拟"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q46",
+   "category": "资格要求",
+   "question": "要是自己就是造这台机器的厂家，除了卖器械的资质，还得多办哪个证？",
+   "evidence": [
+    {
+     "page": 4,
+     "quote": "还需具有医疗器械生产许可证"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q47",
+   "category": "资格要求",
+   "question": "标书是在网上自己下吗，要不要先注册？",
+   "evidence": [
+    {
+     "page": 4,
+     "quote": "供应商请在网站自主注册后下载采购文件（zkzf 格式）及资料"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q48",
+   "category": "资格要求",
+   "question": "文件里写的那些牌子，是不是非得照着买？",
+   "evidence": [
+    {
+     "page": 8,
+     "quote": "但这些品牌（或型号）仅供参考，并无限制性"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q49",
+   "category": "资格要求",
+   "question": "供应商要证明具有独立承担民事责任的能力，应提供哪类证明文件？",
+   "evidence": [
+    {
+     "page": 3,
+     "quote": "具有独立承担民事责任的能力（企业营业执照等证明文件）"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q50",
+   "category": "资格要求",
+   "question": "落实政府采购政策需满足的资格要求中，对节能产品是怎么规定的？",
+   "evidence": [
+    {
+     "page": 4,
+     "quote": "政府强制采购节能产品强制采购、节能产品及环境标志产品优先采购"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q51",
+   "category": "资格要求",
+   "question": "招标文件要求中标人必须承诺什么？",
+   "evidence": [
+    {
+     "page": 8,
+     "quote": "中标人必须承诺整体通过用户方及有关主管部门验收"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q52",
+   "category": "数值",
+   "question": "做胃镜那根镜子，往上能弯到多少度？",
+   "evidence": [
+    {
+     "page": 10,
+     "quote": "弯曲角度：向上≥210°，向下≥90°,向左≥100°，向右≥100"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q53",
+   "category": "数值",
+   "question": "这份公告在网上要挂多少天？",
+   "evidence": [
+    {
+     "page": 4,
+     "quote": "自本公告发布之日起5 个工作日。"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q54",
+   "category": "数值",
+   "question": "给镜子照明的那盏灯，功率多大、能用多久？",
+   "evidence": [
+    {
+     "page": 9,
+     "quote": "≥300W 氙灯，持续使用约500 小时"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q55",
+   "category": "数值",
+   "question": "配的那块显示屏有多大？",
+   "evidence": [
+    {
+     "page": 10,
+     "quote": "监视器≥26 寸，屏幕长宽比16:9"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q56",
+   "category": "数值",
+   "question": "做肠镜那根镜子，中间过器械的孔最细要多少毫米？",
+   "evidence": [
+    {
+     "page": 10,
+     "quote": "活检孔内径：≥ 3.7 mm"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q57",
+   "category": "数值",
+   "question": "采购代理机构的联系方式是什么？",
+   "evidence": [
+    {
+     "page": 5,
+     "quote": "联系方式：0394-8106517"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q58",
+   "category": "评标办法",
+   "question": "打分的那几个人是从哪儿找来的？",
+   "evidence": [
+    {
+     "page": 17,
+     "quote": "评标委员会在政府采购专家库中随机抽取。"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q59",
+   "category": "评标办法",
+   "question": "开标之后，第一道关口查的是什么？",
+   "evidence": [
+    {
+     "page": 18,
+     "quote": "评委会首先对各投标人进行符合性审查"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q60",
+   "category": "评标办法",
+   "question": "被叫去说明情况的时候，打个电话口头讲讲行吗？",
+   "evidence": [
+    {
+     "page": 18,
+     "quote": "以询标的方式告知并要求投标人以书面方式进行必要的澄清、说明或补正"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q61",
+   "category": "评标办法",
+   "question": "几个人分别打分，最后怎么合成一个总分？",
+   "evidence": [
+    {
+     "page": 18,
+     "quote": "各投标人的最终得分为各评委得分的算术平均值"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q62",
+   "category": "评标办法",
+   "question": "开标那天还得抱着一箱证件纸质本来回跑吗？",
+   "evidence": [
+    {
+     "page": 20,
+     "quote": "本项目投标人所需提供原件在评标时无需提供"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q63",
+   "category": "评标办法",
+   "question": "不去现场实地转一圈，会白白丢掉分数吗？",
+   "evidence": [
+    {
+     "page": 20,
+     "quote": "投标企业提供现场勘查证明得5 分。不提供不得分。"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q64",
+   "category": "评标办法",
+   "question": "设备在保修期里突然坏了，提前写个应对方案能加分吗？",
+   "evidence": [
+    {
+     "page": 20,
+     "quote": "提供产品保修期内突发故障时的预案得4 分，未提供不得分"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q65",
+   "category": "评标办法",
+   "question": "本项目评标采用什么方法？",
+   "evidence": [
+    {
+     "page": 17,
+     "quote": "本次项目评标采用综合评分法作为对投标人标书的比较方法。"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q66",
+   "category": "评标办法",
+   "question": "评标结束后，由谁对评审结果及响应文件等进行复核？",
+   "evidence": [
+    {
+     "page": 20,
+     "quote": "评标结束后，由采购人对评审结果及响应文件等进行复核"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q67",
+   "category": "评标办法",
+   "question": "综合得分出现两家或两家以上相同时，如何确定中标候选人？",
+   "evidence": [
+    {
+     "page": 21,
+     "quote": "如果综合得分中出现两家或两家以上相同者，投标报价较低者优先中标"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q68",
+   "category": "废标",
+   "question": "交货时间只写“尽快”“争取早点”这种含糊话，会不会被拒？",
+   "evidence": [
+    {
+     "page": 22,
+     "quote": "交货完工期不确切、不肯定的投标"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q69",
+   "category": "废标",
+   "question": "对方说付款方式只能按他们的来，跟招标文件对不上，会怎样？",
+   "evidence": [
+    {
+     "page": 22,
+     "quote": "对售后服务、付款方式不满足招标文件要求的"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q70",
+   "category": "废标",
+   "question": "两家公司的标书是同一个人送过去的，这算什么？",
+   "evidence": [
+    {
+     "page": 22,
+     "quote": "不同供应商的投标（响应）文件由同一人送达或者分发"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q71",
+   "category": "废标",
+   "question": "两份标书连错的地方都错得一模一样，会怎么处理？",
+   "evidence": [
+    {
+     "page": 22,
+     "quote": "不同供应商的投标（响应）文件的内容存在两处以上细节错误一致"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q72",
+   "category": "废标",
+   "question": "两家的法人签字看着像同一个人的笔迹，有问题吗？",
+   "evidence": [
+    {
+     "page": 22,
+     "quote": "不同供应商投标（响应）文件中法定代表人或者负责人签字出自同一人之手"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q73",
+   "category": "废标",
+   "question": "资质条件差一截、够不上要求，还能参加吗？",
+   "evidence": [
+    {
+     "page": 21,
+     "quote": "不具备招标文件中规定资格要求的"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q74",
+   "category": "废标",
+   "question": "投标人不能证明其报价合理性时，评标委员会应当如何处理？",
+   "evidence": [
+    {
+     "page": 22,
+     "quote": "其报价合理性的，评标委员会应当将其作为无效投标处理"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": false
+  },
+  {
+   "id": "Q75",
+   "category": "多跳",
+   "question": "专家评完以后，采购方最晚几天内必须把中标单位定下来？定了之后，中标单位又得在几天内把合同签完？",
+   "evidence": [
+    {
+     "page": 33,
+     "quote": "采购人应当自收到评审报告之日起5个工作日内"
+    },
+    {
+     "page": 34,
+     "quote": "中标人应在中标通知书发出之日起七日历日内"
+    }
+   ],
+   "must_refuse": false,
+   "colloquial": true
+  },
+  {
+   "id": "Q76",
+   "category": "无法回答",
+   "question": "开标那天一共来了几家单位投标？",
+   "evidence": [],
+   "must_refuse": true,
+   "colloquial": true
+  },
+  {
+   "id": "Q77",
+   "category": "无法回答",
+   "question": "最后排第二的那家，比第一名差了多少分？",
+   "evidence": [],
+   "must_refuse": true,
+   "colloquial": true
+  },
+  {
+   "id": "Q78",
+   "category": "无法回答",
+   "question": "这个项目以前流标过几次？",
+   "evidence": [],
+   "must_refuse": true,
+   "colloquial": true
+  },
+  {
+   "id": "Q79",
+   "category": "无法回答",
+   "question": "这批货最后具体送到哪个门牌号、哪间库房？",
+   "evidence": [],
+   "must_refuse": true,
+   "colloquial": true
+  },
+  {
+   "id": "Q80",
+   "category": "无法回答",
+   "question": "总共六百三十万，摊到每台设备上分别是多少钱？",
+   "evidence": [],
+   "must_refuse": true,
+   "colloquial": true
+  }
+ ]
+}

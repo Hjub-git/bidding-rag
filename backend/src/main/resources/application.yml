@@ -1,0 +1,93 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: bidding-backend
+  profiles:
+    # 默认 dev：打印 SQL 方便本地排查；生产用 --spring.profiles.active=prod 关闭
+    active: dev
+  servlet:
+    multipart:
+      # 招标文件通常几 MB，641 页 PDF 约 2.9MB；上限与 Python 的 MAX_FILE_SIZE_MB 对齐
+      max-file-size: 50MB
+      max-request-size: 50MB
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 生产环境务必用环境变量注入，不要提交明文密码（这里仅作本地演示默认值）
+    url: jdbc:mysql://localhost:3306/bidding_system?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    username: ${DB_USER:root}
+    password: ${DB_PASSWORD:your_mysql_password}
+  jackson:
+    # 前后端统一用 snake_case 字段名，避免驼峰/下划线混用导致的映射 bug
+    property-naming-strategy: SNAKE_CASE
+    time-zone: Asia/Shanghai
+
+mybatis-plus:
+  configuration:
+    # 数据库列名(下划线) 与 实体属性(驼峰) 自动映射
+    map-underscore-to-camel-case: true
+  global-config:
+    banner: false
+    db-config:
+      # 主键自增
+      id-type: auto
+      # 逻辑删除配置：删除走 UPDATE deleted=1，不物理删
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+# RAG 服务配置
+rag:
+  python:
+    # Python 检索服务地址（只绑回环，不对内网/公网暴露）
+    base-url: ${RAG_PYTHON_URL:http://127.0.0.1:8000}
+  # 内部服务令牌：Java → Python 的唯一凭证。
+  # Python 侧除 GET /api/health 外所有接口都校验 X-Internal-Token（缺失/错误 → 401）。
+  # 不提供默认值：历史默认串是公开的，留着就等于能直连 8000 绕过 Java 权限。
+  # 与 Python 侧 RAG_INTERNAL_TOKEN 同源，由 scripts/start-all.ps1 生成并注入；缺失时两侧都启动失败。
+  internal-token: ${RAG_INTERNAL_TOKEN:}
+  upload:
+    # 上传文件的落盘根目录。**必须与 Python 的 Config.DATA_ROOT 一致**，
+    # 否则 /api/ingest 的路径防穿越会直接 400（生产上就是 Java 落盘、Python 只读这个前缀）。
+    #
+    # 取值优先级：环境变量 RAG_DATA_ROOT > 这里的默认值。
+    #   · scripts/start-all.ps1 会注入**绝对路径** <仓库根>/rag-service/data，Python 侧读同一个
+    #     环境变量（见 rag-service/app/core/config.py 的 DATA_ROOT），两端必然同值 —— 推荐路径。
+    #   · 默认值 ../rag-service/data 相对「Java 进程工作目录」解析；start-all.ps1 把 java 的
+    #     工作目录设在 backend/，所以它等价于 <仓库根>/rag-service/data。
+    #   · 手工在别的目录起 jar 时，请显式设环境变量 RAG_DATA_ROOT=<绝对路径>。
+    data-root: ${RAG_DATA_ROOT:../rag-service/data}
+
+# 自定义 JWT 配置
+jwt:
+  # HMAC 密钥（HS256 要求至少 32 字节）。**不再提供默认值**：必须由环境变量 JWT_SECRET 注入，
+  # 否则 JwtUtil 启动即 fail-fast（历史默认串是公开的，可被用来伪造 admin token）。
+  # start-all.ps1 会自动生成 48 字节随机密钥并写入 _run/jwt-secret.txt。
+  secret: ${JWT_SECRET:}
+  # 令牌有效期（秒），默认 24 小时
+  expiration: 86400
+  header: Authorization
+  prefix: "Bearer "
+
+---
+# 开发环境：控制台打印 SQL
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+---
+# 生产环境：关闭 SQL 打印，统一走日志框架按需输出
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl

@@ -1,0 +1,52 @@
+{
+  "dataset": "henan_tender.pdf",
+  "version": "seed-40-v1",
+  "note": "基于周口市淮阳区中医院医学装备采购项目（淮财招标采购-2024-23）真实公开招标文件构造。evidence.quote 为 PDF 原文片段，判定时去空白后做子串匹配。page 为 PDF 物理页码。",
+  "items": [
+    {"id":"Q01","category":"资格条件","question":"投标人需要具备什么资质证书？","evidence":[{"page":4,"quote":"供应商应具有医疗器械经营许可证或相关备案凭证"}],"must_refuse":false},
+    {"id":"Q02","category":"资格条件","question":"生产厂家来投标还需要额外的许可证吗？","evidence":[{"page":4,"quote":"当供应商为生产厂家时，还需具有医疗器械生产许可证"}],"must_refuse":false},
+    {"id":"Q03","category":"资格条件","question":"本项目允许联合体投标吗？","evidence":[{"page":6,"quote":"联合体投标不允许"}],"must_refuse":false},
+    {"id":"Q04","category":"资格条件","question":"本项目接受进口产品吗？","evidence":[{"page":3,"quote":"是否接受进口产品：是"}],"must_refuse":false},
+    {"id":"Q05","category":"资格条件","question":"被列入失信被执行人的供应商还能参加吗？","evidence":[{"page":4,"quote":"将拒绝其参加政府采购活动"}],"must_refuse":false},
+    {"id":"Q06","category":"资格条件","question":"信用记录查询的时间范围是怎么规定的？","evidence":[{"page":4,"quote":"查询日期为公告发布之日起至投标截止之日止"}],"must_refuse":false},
+    {"id":"Q07","category":"资格条件","question":"本项目是否只面向中小企业采购？","evidence":[{"page":3,"quote":"本项目是否为只面向中小企业采购：否"}],"must_refuse":false},
+    {"id":"Q08","category":"资格条件","question":"供应商需要满足政府采购法第几条规定的资格条件？","evidence":[{"page":3,"quote":"满足《中华人民共和国政府采购法》第二十二条规定"}],"must_refuse":false},
+
+    {"id":"Q09","category":"评分办法","question":"评标满分是多少分？","evidence":[{"page":18,"quote":"评分标准（满分为100 分）"}],"must_refuse":false},
+    {"id":"Q10","category":"评分办法","question":"投标报价这一项占多少分？","evidence":[{"page":19,"quote":"投标报价评分标准30 分"}],"must_refuse":false},
+    {"id":"Q11","category":"评分办法","question":"投标报价得分怎么计算？","evidence":[{"page":19,"quote":"投标报价得分=(评标基准价／投标报价)×30"}],"must_refuse":false},
+    {"id":"Q12","category":"评分办法","question":"技术部分占多少分？","evidence":[{"page":19,"quote":"技术部分(35 分）"}],"must_refuse":false},
+    {"id":"Q13","category":"评分办法","question":"商务部分占多少分？","evidence":[{"page":20,"quote":"商务部分（35 分）"}],"must_refuse":false},
+    {"id":"Q14","category":"评分办法","question":"技术参数有一项不满足会怎么扣分？","evidence":[{"page":19,"quote":"1项不满足扣1分,30分扣完为止"}],"must_refuse":false},
+    {"id":"Q15","category":"评分办法","question":"小微企业报价有什么优惠？","evidence":[{"page":19,"quote":"对小微企业报价给予20%扣除"}],"must_refuse":false},
+    {"id":"Q16","category":"评分办法","question":"评分分值保留几位小数？","evidence":[{"page":18,"quote":"评分分值计算保留小数点后两位"}],"must_refuse":false},
+
+    {"id":"Q17","category":"数值","question":"投标保证金要交多少钱？","evidence":[{"page":6,"quote":"不需要缴纳投标保证金"}],"must_refuse":false},
+    {"id":"Q18","category":"数值","question":"投标文件提交的截止时间是几点？","evidence":[{"page":4,"quote":"2024 年7 月9 日10 点 00 分"}],"must_refuse":false},
+    {"id":"Q19","category":"数值","question":"项目预算金额是多少？","evidence":[{"page":3,"quote":"预算金额：630 万元"}],"must_refuse":false},
+    {"id":"Q20","category":"数值","question":"合同履行期限是多久？","evidence":[{"page":3,"quote":"合同履行期限：60 天"}],"must_refuse":false},
+    {"id":"Q21","category":"数值","question":"投标有效期是多久？","evidence":[{"page":6,"quote":"开标后60 天"}],"must_refuse":false},
+    {"id":"Q22","category":"数值","question":"免费质保期多长？","evidence":[{"page":6,"quote":"免费质保期12 个月"}],"must_refuse":false},
+    {"id":"Q23","category":"数值","question":"获取招标文件的时间是什么时候？","evidence":[{"page":4,"quote":"2024 年6 月18 日至 2024 年 6 月25 日"}],"must_refuse":false},
+    {"id":"Q24","category":"数值","question":"公告期限是几个工作日？","evidence":[{"page":4,"quote":"自本公告发布之日起5 个工作日"}],"must_refuse":false},
+
+    {"id":"Q25","category":"废标","question":"哪些情形应当予以废标？","evidence":[{"page":21,"quote":"出现影响采购公正的违法、违规行为的"}],"must_refuse":false},
+    {"id":"Q26","category":"废标","question":"投标报价超过采购预算会怎么处理？","evidence":[{"page":21,"quote":"投标人的报价超过了采购预算，采购人不能支付的"}],"must_refuse":false},
+    {"id":"Q27","category":"废标","question":"不同供应商上传文件的电脑硬件信息相同会怎么处理？","evidence":[{"page":22,"quote":"不同供应商的电子投标（响应）文件上传计算机的网卡 MAC 地址"}],"must_refuse":false},
+    {"id":"Q28","category":"废标","question":"投标文件没有按规定签章会怎样？","evidence":[{"page":21,"quote":"未按照招标文件规定要求签署、签章的"}],"must_refuse":false},
+    {"id":"Q29","category":"废标","question":"对同一货物提供选择性报价会怎样？","evidence":[{"page":22,"quote":"投标文件中对同一货物或标段提供选择性报价的"}],"must_refuse":false},
+    {"id":"Q30","category":"废标","question":"不同供应商用同一台设备编制投标文件算什么问题？","evidence":[{"page":22,"quote":"不同供应商的投标（响应）文件由同一电子设备编制"}],"must_refuse":false},
+
+    {"id":"Q31","category":"多跳","question":"如果两家投标人综合得分相同，谁中标？","evidence":[{"page":21,"quote":"如果综合得分中出现两家或两家以上相同者，投标报价较低者优先中标"}],"must_refuse":false},
+    {"id":"Q32","category":"多跳","question":"投标人投同一品牌的核心产品怎么评审？","evidence":[{"page":20,"quote":"不同投标人所投核心产品对应品牌完全相同"}],"must_refuse":false},
+    {"id":"Q33","category":"多跳","question":"本项目的付款方式是什么？","evidence":[{"page":6,"quote":"项目验收合格、资金到账后付款"}],"must_refuse":false},
+    {"id":"Q34","category":"多跳","question":"供货期限和免费质保期分别是多久？","evidence":[{"page":6,"quote":"供货期限60 天"},{"page":6,"quote":"免费质保期12 个月"}],"must_refuse":false},
+
+    {"id":"Q35","category":"无法回答","question":"竞争对手的报价是多少？","evidence":[],"must_refuse":true},
+    {"id":"Q36","category":"无法回答","question":"上一次这个项目的中标单位是哪家公司？","evidence":[],"must_refuse":true},
+    {"id":"Q37","category":"无法回答","question":"这款医学装备目前的市场价是多少？","evidence":[],"must_refuse":true},
+    {"id":"Q38","category":"无法回答","question":"本次评标委员会的专家名单是谁？","evidence":[],"must_refuse":true},
+    {"id":"Q39","category":"无法回答","question":"中标结果什么时候公示，在哪里查？","evidence":[],"must_refuse":true},
+    {"id":"Q40","category":"陷阱可答","question":"采购单位的项目联系人电话是多少？","evidence":[{"page":5,"quote":"联系方式：13592283936"}],"must_refuse":false}
+  ]
+}
