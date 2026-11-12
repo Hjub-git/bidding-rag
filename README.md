@@ -8,6 +8,7 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.110-009688)
 ![Chroma](https://img.shields.io/badge/Chroma-1.5.9-ffcd00)
 ![License](https://img.shields.io/badge/License-MIT-blue)
+[![CI](https://github.com/Hjub-git/bidding-rag/actions/workflows/ci.yml/badge.svg)](https://github.com/Hjub-git/bidding-rag/actions/workflows/ci.yml)
 
 ---
 
@@ -97,6 +98,13 @@ flowchart LR
 ---
 
 ## 5. 快速开始
+
+### 5.0 拉代码
+
+```bash
+git clone https://github.com/Hjub-git/bidding-rag.git
+cd bidding-rag
+```
 
 ### 5.1 前置
 

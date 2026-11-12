@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  backend:
+    name: Backend (JDK 17)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: maven
+      - name: Build
+        working-directory: backend
+        run: mvn -B -DskipTests package
+
+  frontend:
+    name: Frontend (Node 18)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+      - name: Install
+        working-directory: frontend
+        run: npm install --no-audit --no-fund
+      - name: Build
+        working-directory: frontend
+        run: npm run build
+
+  rag-service:
+    name: RAG service (Python 3.9)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.9"
+      # 只做语法检查：跑 tests/test_isolation.py 需要下载 bge 模型 + 起 Chroma，
+      # CI 上装依赖要 5-10 分钟且受 HF 网络影响，放本地跑更合适（见 README §9）。
+      - name: Syntax check
+        run: python -m compileall -q rag-service/app
